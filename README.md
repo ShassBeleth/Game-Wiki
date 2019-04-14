@@ -13,10 +13,10 @@
   * [132 キャラクター](https://github.com/ShassBeleth/Game-Wiki/tree/master/100_%E5%9F%BA%E6%9C%AC%E8%A8%AD%E8%A8%88/130_%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/132_%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC)
   * [133 シナリオ](https://github.com/ShassBeleth/Game-Wiki/tree/master/100_%E5%9F%BA%E6%9C%AC%E8%A8%AD%E8%A8%88/130_%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/133_%E3%82%B7%E3%83%8A%E3%83%AA%E3%82%AA)
 * [140 カスタマイズ](https://github.com/ShassBeleth/Game-Wiki/tree/master/100_%E5%9F%BA%E6%9C%AC%E8%A8%AD%E8%A8%88/140_%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA)
-  * 141 素体
-  * 142 装備
-  * 143 パラメータ
-  * 144 その他
+  * [141 素体](https://github.com/ShassBeleth/Game-Wiki/tree/master/100_%E5%9F%BA%E6%9C%AC%E8%A8%AD%E8%A8%88/140_%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA/141_%E7%B4%A0%E4%BD%93)
+  * [142 装備](https://github.com/ShassBeleth/Game-Wiki/tree/master/100_%E5%9F%BA%E6%9C%AC%E8%A8%AD%E8%A8%88/140_%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA/142_%E8%A3%85%E5%82%99)
+  * [143 パラメータ](https://github.com/ShassBeleth/Game-Wiki/tree/master/100_%E5%9F%BA%E6%9C%AC%E8%A8%AD%E8%A8%88/140_%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA/143_%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF)
+  * [144 その他](https://github.com/ShassBeleth/Game-Wiki/tree/master/100_%E5%9F%BA%E6%9C%AC%E8%A8%AD%E8%A8%88/140_%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA/144_%E3%81%9D%E3%81%AE%E4%BB%96)
 ## 200 詳細設計  
 * [210 ER図](https://github.com/ShassBeleth/Game-Wiki/tree/master/200_%E8%A9%B3%E7%B4%B0%E8%A8%AD%E8%A8%88/210_ER%E5%9B%B3)
   * 211 ローカルDB
