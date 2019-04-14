@@ -19,7 +19,7 @@
   * [144 その他](https://github.com/ShassBeleth/Game-Wiki/tree/master/100_%E5%9F%BA%E6%9C%AC%E8%A8%AD%E8%A8%88/140_%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA/144_%E3%81%9D%E3%81%AE%E4%BB%96)
 ## 200 詳細設計  
 * [210 ER図](https://github.com/ShassBeleth/Game-Wiki/tree/master/200_%E8%A9%B3%E7%B4%B0%E8%A8%AD%E8%A8%88/210_ER%E5%9B%B3)
-  * 211 ローカルDB
-  * 212 サーバDB
+  * [211 ローカルDB](https://github.com/ShassBeleth/Game-Wiki/tree/master/200_%E8%A9%B3%E7%B4%B0%E8%A8%AD%E8%A8%88/210_ER%E5%9B%B3/211_%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%ABDB)
+  * [212 サーバDB](https://github.com/ShassBeleth/Game-Wiki/tree/master/200_%E8%A9%B3%E7%B4%B0%E8%A8%AD%E8%A8%88/210_ER%E5%9B%B3/212_%E3%82%B5%E3%83%BC%E3%83%90DB)
 * [220 全体シーケンス](https://github.com/ShassBeleth/Game-Wiki/tree/master/200_%E8%A9%B3%E7%B4%B0%E8%A8%AD%E8%A8%88/220_%E5%85%A8%E4%BD%93%E3%82%B7%E3%83%BC%E3%82%B1%E3%83%B3%E3%82%B9)
 * [221 全体クラス図](https://github.com/ShassBeleth/Game-Wiki/tree/master/200_%E8%A9%B3%E7%B4%B0%E8%A8%AD%E8%A8%88/221_%E5%85%A8%E4%BD%93%E3%82%AF%E3%83%A9%E3%82%B9%E5%9B%B3)
