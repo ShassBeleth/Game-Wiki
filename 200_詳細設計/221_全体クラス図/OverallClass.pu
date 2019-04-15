@@ -1,0 +1,62 @@
+@startuml
+
+title 全体クラス図
+
+skinparam classAttributeIconSize 0
+
+class MonoBehavior{
+
+}
+
+class View {
+	+ EventHandler
+	+ Event()
+}
+note left of View : アプリケーションロジックを含む\nMonoBehaviorを継承するのはViewのみ
+
+class Presenter {
+	- view
+	- model
+	- service
+	--
+	+ View操作時のイベント定義()
+	+ Model変更時のイベント定義()
+}
+note top of Presenter : できるだけイベント定義のみとし、\nビジネスロジックはServiceに任せる
+
+class Model {
+	+ 各種パラメータ
+}
+note right of Model : ドメインロジックを含む場合もあるが\n基本ReactivePropertyを使用するので\nロジックを含まない場合が多い
+
+class Service {
+	-- シングルトン -- 
+	- {static}Instance
+	- Constructor()
+	+ {static}GetInstance()
+	--
+	+ 各種ロジック
+}
+note left of Service : ビジネスロジックを含む
+
+class Repository {
+	-- シングルトン -- 
+	- {static}Instance
+	- Constructor()
+	+ {static}GetInstance()
+	--
+	+ 各種ロジック
+}
+note left of Repository : DB参照やファイル参照を行う
+
+
+MonoBehavior <|-down- View
+
+Presenter *-left- View
+Presenter *-right- Model
+Presenter *-down- Service
+
+Service *-down- Repository
+Service *- Model
+
+@enduml
