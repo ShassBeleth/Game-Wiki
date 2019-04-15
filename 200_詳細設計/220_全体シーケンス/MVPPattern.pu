@@ -1,0 +1,62 @@
+@startuml
+
+title MVPパターン基本シーケンス
+autonumber
+
+participant Model
+participant Presenter
+participant View
+participant Unity
+
+activate Presenter
+note right of Presenter
+コンストラクタでViewのイベントと
+Modelの値変更時イベントを設定
+end note
+
+Presenter -> Model : インスタンス生成
+Presenter <-- Model
+Presenter -> Unity : GameObject.FindよりView取得
+Presenter <-- Unity
+Presenter -> View : EventHandler登録
+Presenter <-- View
+Presenter -> Model : Subscribe設定
+Presenter <-- Model
+
+deactivate Presenter
+
+... ゲームからViewが操作された時 ...
+
+Unity -> View : OnClick等hierarchyからメソッドが呼ばれる
+activate View
+View -> Presenter : デリゲート関数発火
+note right of View
+ex) 
+OnClickButtonEvent()
+   => this.OnClickButtonEventListener?.Invoke();
+end note
+activate Presenter
+Presenter -> Model : モデルの値を変更
+activate Model
+Presenter <-- Model
+deactivate Model
+note right of Presenter
+Viewより発火するデリゲート関数内でViewは操作しない
+end note
+View <-- Presenter
+deactivate Presenter
+deactivate View
+
+... Modelの値が更新された時 ...
+
+Model -> Presenter : デリゲート関数発火
+activate Model
+activate Presenter
+Presenter -> View : 画面の更新
+activate View
+Presenter <-- View
+deactivate View
+Model <-- Presenter
+deactivate Presenter
+deactivate Model
+@enduml

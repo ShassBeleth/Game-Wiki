@@ -1,0 +1,23 @@
+@startuml
+
+title 画面遷移時シーケンス
+autonumber
+
+HogePresenter -> SceneManager : LoadScene( "Fuga" , fugaParameter )
+note right of HogePresenter
+SceneManager.LoadSceneを呼ぶのは
+Presenterクラス
+end note
+SceneManager -> SceneManager : OnSceneLoaded()
+note right of SceneManager
+OnSceneLoadedが呼ばれた時には
+既にHierarchy上にViewが存在する
+end note
+SceneManager -> FugaPresenter : new FugaPresenter( fugaParameter )
+note right of FugaPresenter
+画面遷移時に渡すパラメータは
+SceneManager.LoadSceneの引数で渡し、
+遷移先のPresenterの引数で受け取る
+end note
+
+@enduml

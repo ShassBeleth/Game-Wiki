@@ -1,0 +1,13 @@
+@startuml
+
+title 初回シーケンス
+autonumber
+
+Unity -> RuntimeInitializer : Initialize()
+RuntimeInitializer -> SceneManager : GetInstance()
+SceneManager -> SceneManager : OnSceneLoaded()の登録
+note right of SceneManager
+初回は必ずタイトル画面に遷移
+end note
+
+@enduml
